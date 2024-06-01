@@ -41,7 +41,7 @@ This project implements a Flask web application that leverages the SO-VITS-SVC (
 
 ### Clone the Repository
 ```sh
-git clone [https://github.com/Abdelrahman915/Voice-Cloning.git]
+git clone https://github.com/Abdelrahman915/Voice-Cloning.git
 cd Voice-Cloning
 
 ### Set Up Virtual Environment
