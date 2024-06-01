@@ -69,7 +69,7 @@ you can build the image from scratch using the docker file in the repo
 command : docker build -t <yourimagename> .
 
 or pull and start the container with :
-docker run --gpus all -p8080:8080 --name voicecloning abdelrahman915/imageprefinal:Lastdance
+docker run --gpus all -p8080:8080 --name voicecloning abdelrahman915/voice-cloning:v1
 
 
 ### Resources
