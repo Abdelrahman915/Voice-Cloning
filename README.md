@@ -6,9 +6,9 @@
 
 ## Colab Notebook
 
-For detailed explanations and demonstrations of the voice cloning process, please refer to our Colab notebook:
+For detailed explanations and demonstrations of the pretrained model training process, please refer to our Colab notebook:
 
-[Voice Cloning Colab Notebook](link_to_colab_notebook)
+[Voice Cloning Colab Notebook](https://colab.research.google.com/drive/1JBJvk1FluAOM9DOlvUBjrsnUKZCWPuXd?usp=sharing)
 
 ## Docker Command
 
