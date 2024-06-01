@@ -40,37 +40,39 @@ This project implements a Flask web application that leverages the SO-VITS-SVC (
 - CUDA-compatible GPU (for Docker usage)
 
 ### Clone the Repository
-
+```sh
 git clone https://github.com/Abdelrahman915/Voice-Cloning.git
 cd Voice-Cloning
+```
 
 ## Set Up Virtual Environment
+```sh
 -python -m venv venv
 -source venv/bin/activate  # On Windows use venv\Scripts\activate
-
+```
 ### Install Dependencies
+```sh
 -pip install -r requirements.txt
-
+```
 Download Pre-trained Models
 Download the pre-trained models from the SO-VITS-SVC GitHub repository: SO-VITS-SVC GitHub Repository
 
 Usage
 Running the Application
 To run the Flask application locall
-
-export FLASK_APP=app.py
-flask run
-# or
+```sh
 python app.py
-
+```
 
 ### Using Docker
 you can build the image from scratch using the docker file in the repo 
-command : docker build -t <yourimagename> .
-
+```sh
+docker build -t <yourimagename> .
+```
 or pull and start the container with :
+```sh
 docker run --gpus all -p8080:8080 --name voicecloning abdelrahman915/voice-cloning:v1
-
+```
 
 ### Resources
 -https://github.com/svc-develop-team/so-vits-svc?tab=readme-ov-file
