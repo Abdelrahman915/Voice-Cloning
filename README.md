@@ -55,7 +55,7 @@ cd Voice-Cloning
 -pip install -r requirements.txt
 ```
 Download Pre-trained Models
-Download the pre-trained models from the SO-VITS-SVC GitHub repository: SO-VITS-SVC GitHub Repository
+Download the pre-trained models from the SO-VITS-SVC GitHub repository: SO-VITS-SVC GitHub Repository link in the references below
 
 Usage
 Running the Application
@@ -74,7 +74,7 @@ or pull and start the container with :
 docker run --gpus all -p8080:8080 --name voicecloning abdelrahman915/voice-cloning:v1
 ```
 
-### Resources
+### References
 -https://github.com/svc-develop-team/so-vits-svc?tab=readme-ov-file
 -https://colab.research.google.com/drive/1JBJvk1FluAOM9DOlvUBjrsnUKZCWPuXd?usp=sharing
 
