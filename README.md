@@ -40,11 +40,11 @@ This project implements a Flask web application that leverages the SO-VITS-SVC (
 - CUDA-compatible GPU (for Docker usage)
 
 ### Clone the Repository
-```sh
+
 git clone https://github.com/Abdelrahman915/Voice-Cloning.git
 cd Voice-Cloning
 
-### Set Up Virtual Environment
+## Set Up Virtual Environment
 -python -m venv venv
 -source venv/bin/activate  # On Windows use venv\Scripts\activate
 
