@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Quicksand", sans-serif;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #111;
+            width: 100%;
+            overflow: hidden;
+        }
+        .ring {
+            position: relative;
+            width: 60vw; /* Reduced relative size */
+            height: 60vw; /* Reduced relative size */
+            max-width: 600px; /* Reduced maximum size */
+            max-height: 600px; /* Reduced maximum size */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .ring i {
+            position: absolute;
+            inset: 0;
+            border: 2px solid #fff;
+            transition: 0.5s;
+        }
+        .ring i:nth-child(1) {
+            border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+            animation: animate 6s linear infinite;
+        }
+        .ring i:nth-child(2) {
+            border-radius: 41% 44% 56% 59%/38% 62% 63% 37%;
+            animation: animate 4s linear infinite;
+        }
+        .ring i:nth-child(3) {
+            border-radius: 41% 44% 56% 59%/38% 62% 63% 37%;
+            animation: animate2 10s linear infinite;
+        }
+        .ring:hover i {
+            border: 6px solid var(--clr);
+            filter: drop-shadow(0 0 20px var(--clr));
+        }
+        @keyframes animate {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        @keyframes animate2 {
+            0% {
+                transform: rotate(360deg);
+            }
+            100% {
+                transform: rotate(0deg);
+            }
+        }
+        .container {
+            position: absolute;
+            width: 80%; /* Relative width */
+            max-width: 250px; /* Reduced maximum width */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 10px; /* Reduced gap */
+        }
+        h1 {
+            font-size: 1.5em; /* Reduced font size */
+            color: #fff;
+        }
+        h2 {
+            font-size: 1.2em; /* Reduced font size */
+            color: #fff;
+            margin-top: 10px; /* Reduced margin */
+        }
+        label, p {
+            display: block;
+            margin: 10px 0 5px; /* Adjusted margins */
+            font-weight: bold;
+            color: #fff;
+        }
+        input[type="file"], select, input[type="submit"], audio {
+            width: 100%;
+            padding: 8px 16px; /* Reduced padding */
+            margin: 10px 0;
+            border: 2px solid #fff;
+            border-radius: 20px; /* Adjusted border radius */
+            font-size: 1em; /* Reduced font size */
+            background: transparent;
+            color: #fff;
+            outline: none;
+            appearance: none;
+        }
+        input[type="file"]::file-selector-button, input[type="submit"] {
+            background: linear-gradient(45deg, #ff0057, #fffd44);
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        input[type="submit"]:hover, input[type="file"]::file-selector-button:hover {
+            background: linear-gradient(45deg, #ff0057, #fffd44);
+        }
+        select {
+            position: relative;
+            appearance: none;
+            background: transparent;
+            color: #fff;
+            cursor: pointer;
+            padding-right: 30px; /* Space for the arrow */
+        }
+        select:focus {
+            outline: none;
+        }
+        select option {
+            background: #111;
+            color: #fff;
+        }
+        .select-wrapper {
+            position: relative;
+            width: 100%;
+        }
+        .select-wrapper::after {
+            content: '\25BC'; /* Unicode for down arrow */
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            pointer-events: none;
+            color: #fffd44; /* Match the arrow color to the button gradient */
+        }
+        a {
+            display: inline-block;
+            margin-top: 10px; /* Reduced margin */
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: #ff0000;
+        }
+        audio {
+            width: 100%;
+            padding: 8px 16px; /* Reduced padding */
+            margin: 10px 0;
+            border: 2px solid #fff;
+            border-radius: 20px; /* Adjusted border radius */
+            background: transparent;
+            color: #fff;
+            outline: none;
+        }
+        a.download-link {
+            background: linear-gradient(45deg, #ff0057, #fffd44);
+            padding: 8px 16px; /* Adjusted padding */
+            border-radius: 20px; /* Adjusted border radius */
+            text-align: center;
+            display: inline-block;
+        }
+        a.download-link:hover {
+            background: linear-gradient(45deg, #ff0057, #fffd44);
+            color: #fff;
+        }
+        .popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #111;
+            padding: 15px; /* Reduced padding */
+            border-radius: 10px;
+            border: 2px solid #fff;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+            color: #fff;
+            display: none;
+            z-index: 1000;
+        }
+        .popup.open {
+            display: block;
+        }
+        .popup .close-btn {
+            display: block;
+            margin-top: 10px;
+            text-align: center;
+            cursor: pointer;
+            color: #ff0057;
+        }
+        .popup .close-btn:hover {
+            color: #fffd44;
+        }
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            display: none;
+            z-index: 500;
+        }
+        .overlay.open {
+            display: block;
+        }
