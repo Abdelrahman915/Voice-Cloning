@@ -79,7 +79,7 @@ docker run --gpus all -p8080:8080 --name voicecloning abdelrahman915/voice-cloni
 ### Contributing
 We welcome contributions to this project. Please open an issue or submit a pull request on GitHub.
 
-Special thanks to my amazing team: Abdelrahman915
+Special thanks to my amazing team: Ahmed Zaghloul, Youssef Sharkawy
 
 For major changes, please open an issue first to discuss what you would like to change.
 
